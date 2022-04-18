@@ -1,0 +1,23 @@
+h1 {
+    text-align: center;
+    margin: 5% 0 10% 0;
+}
+
+body {
+    text-align: center;
+}
+
+#home-button {
+    display: inline-block;
+    font-size: 18pt;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    border-style: solid;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+#home-button:hover {
+    color: #D4080C;
+}

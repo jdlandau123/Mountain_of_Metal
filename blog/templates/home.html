@@ -1,0 +1,55 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+{% load static %}
+<link rel="stylesheet" href="{% static 'home.css' %}">
+<!-- CSS Grid
+    <div class="grid-container">
+    {% for post in posts %}
+        <div class="grid_element">
+            <a href="{% url 'article' post.pk %}">
+                <img src="{{post.image.url}}" class="article-thumbnail">
+            </a>
+            <h3><a href="{% url 'article' post.pk %}" class="article-link">{{ post.title }}</a></h3>
+            <p> {{post.author.first_name}} {{post.author.last_name}}</p>
+        </div>
+    {% endfor %}
+    </div>
+-->
+
+<!-- Bootstrap -->
+    <div class="container">
+        {% for post in posts %}
+        {% if forloop.first %}<div class="row">{% endif %}
+            <div class="col-md-4 text-center">
+                <a href="{% url 'article' post.pk %}">
+                    <img src="{{post.image.url}}" class="article-thumbnail">
+                </a>
+                <h3><a href="{% url 'article' post.pk %}" class="article-link">{{ post.title }}</a></h3>
+                <p> {{post.author.first_name}} {{post.author.last_name}}</p>
+            </div>
+        {% if forloop.counter|divisibleby:3 %}</div><div class="row">{% endif %}
+        {% if forloop.last %}</div>{% endif %}
+        {% endfor %}     
+    </div>
+   <br><br>
+
+   <nav>
+       <ul class="pagination justify-content-center">
+    {% if posts.has_previous %}
+            <li class="page-item"><a class="page-link" href="?page=1">&laquo; First</a></li>
+            <li class="page-item"><a class="page-link" href="?page={{ posts.previous_page_number }}">Previous</a></li>
+    {% endif %}
+
+            <li class="page-item disabled"><a class="page-link" href="#"> Page {{ posts.number }} of {{ posts.paginator.num_pages}} </a></li>
+
+    {% if posts.has_next %}
+            <li class="page-item"><a class="page-link" href="?page={{ posts.next_page_number }}">Next</a></li>
+            <li class="page-item"><a class="page-link" href="?page={{ posts.paginator.num_pages}}">Last &raquo</a></li>
+    {% endif %}
+        </ul>
+    </nav>
+
+
+{% endblock %}

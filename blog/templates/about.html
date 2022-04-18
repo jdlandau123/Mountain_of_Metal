@@ -1,0 +1,67 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+{% load static %}
+<link rel="stylesheet" href="{% static 'about.css' %}">
+
+<div class="container">
+    <div class="row">
+        <div class="col-lg-7">
+            <h1>About Mountain of Metal</h1>
+
+            <p>
+                Mountain of Metal is an underground metal focused review platform dedicated to helping readers discover new music and 
+                stay up to date about the music we love. Although this is a metal focused platform we also review adjacent genres such as 
+                post-rock, shoegaze, ambient, and folk. 
+                <br><br>
+                Mountain of Metal was founded by Joshua Landau, a lifelong metalhead and musician with a long history with music. At age 7
+                he learned how to play the guitar and shortly after started experimenting with writing and recording his own music. 
+                Joshua’s connection to metal is what has led him to write, record, produce, and now review music. With 18 years of 
+                studying and playing music, and 10 years of recording and producing music, his taste is trusted amongst metalheads and 
+                normies alike. 
+                <br><br>
+                Favorite genres: Atmospheric black metal, Doom metal, Death metal
+                <br><br>
+                Some favorite artists: Ensiferum, Panopticon, Falls of Rauros, Agalloch, Yob, Warbringer, Black Dahlia Murder, Suffocation
+                <br><br>
+                Early Musical Inspirations: Metallica, Judas Priest, Iron Maiden, Dio, Black Sabbath, Children of Bodom
+            </p>
+        </div>
+        <div class="col-lg-5" >
+            <img src="{% static 'about_me_image.jpg' %}">
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="row">
+        <h1 class="heading-centered">The Author's Work</h1>
+
+        <ul class="bulleted-list">
+            <li>
+                Joshua has a solo project in which he records and produces instrumental post-rock. All music is written, performed, 
+                recorded, mixed, and mastered by Joshua. <br><br>
+                <ul class="bulleted-list">
+                    <li>
+                        Check it out here: <a href="https://joshuaofearth.bandcamp.com/music" target="_blank">Bandcamp</a> / <a href="https://open.spotify.com/album/4xkdCicq6RTRe8jgBe9Zd4?si=8Cf10AlbS4SM2RYRWmLXDg" target="_blank">Spotify</a>  /  <a href="https://music.apple.com/us/album/in-the-distance-ep/1534113045" target="_blank">Apple Music</a>
+                    </li>
+                    <br>
+                    <li>
+                        Read some reviews of Joshua’s music: <a href="https://bluerhymez.com/2020/10/17/in-the-distance-by-joshuaofearth-an-ambient-ep-masterpiece-you-badly-need/" target="_blank">Blue Rhymez Entertainment</a> /  <a href="https://www.restlessmusicmagazine.com/post/joshuaofearth-releases-nature-inspired-ep" target="_blank">Restless Music Magazine</a>
+                    </li>
+                </ul>
+            </li>
+            <br>
+            <li>
+                Listen to Joshua on the Metalheads Podcast: <a href="https://open.spotify.com/episode/4S9TMEJjmkFiYwLiBogcSq?si=9940ee9b50424d35" target="_blank">Spotify</a> / <a href="https://www.youtube.com/watch?v=wTtNZqHFMB8" target="_blank">Youtube</a>
+            </li>
+            <br>
+            <li>
+                Joshua has been posting written album reviews since November 2021 and focuses on underground metal music but will 
+                also include metal-adjacent genres such as post-rock, shoegaze, ambient, and folk
+            </li>
+        </ul>
+    </div>
+</div>
+
+{% endblock%}

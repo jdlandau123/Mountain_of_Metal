@@ -1,0 +1,30 @@
+h1 {
+    font-size: 24pt;
+}
+
+p {
+    font-size: 14pt;
+}
+
+div.image-div {
+    display: flex;
+    align-items: center;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+ul.bulleted-list li {
+    list-style: circle;
+    font-size: 14pt;
+}
+
+a {
+    color: black;
+}
+
+a:hover {
+    color: #D4080C;
+}

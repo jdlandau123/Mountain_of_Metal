@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+{% load static %}
+<link rel="stylesheet" href="{% static 'contact.css' %}">
+
+<div class="container">
+    <h1>Contact Mountain of Metal</h1>
+    <br>
+    <p>Contact Mountain of Metal if you would like to have your album reviewed or add us to your press list</p>
+    <br>
+    <div class="form-row">
+        <div class="form-group col-lg-12">
+            <form action= "{% url 'contact' %}" method="post" class="contact-form">
+                {% csrf_token %}
+                {{ form.as_p }}
+                <input type="submit" value="Submit" class="btn btn-secondary btn-lg text-center">
+            </form>
+        </div>
+    </div>
+</div>
+{% endblock %}

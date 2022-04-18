@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+{% load static %}
+<link rel="stylesheet" href="{% static 'thanks.css' %}">
+
+
+<h1>Thank you for contacting Mountain of Metal</h1>
+<div class="button-container">
+    <a href="{% url 'home' %}" id="home-button">Return Home</a>
+</div>
+
+{% endblock %}

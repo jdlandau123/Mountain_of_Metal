@@ -1,0 +1,28 @@
+/* .grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr));
+    grid-template-rows: auto;
+}
+
+div.grid_element {
+    text-align: center;
+} */
+
+img.article-thumbnail {
+    width: 70%;
+    height: auto;
+}
+
+a.article-link {
+    color: black;
+    text-decoration: none;
+}
+
+a.article-link:hover {
+    text-decoration: underline;
+    color: #D4080C;
+}
+
+body > nav > ul.pagination > li > a {
+    color:#D4080C !important;
+}

@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+{% load static %}
+<link rel="stylesheet" href="{% static 'article.css' %}">
+
+    <div id="article-title">
+        <h3>{{ post.title }}</h3>
+        <h4> Written by: {{ post.author.first_name }} {{ post.author.last_name }}</h4>
+    </div>
+
+<img src="{{post.image.url}}" class="artwork">
+
+<p>{{ post.body|linebreaks }}</p>
+
+{% endblock %}

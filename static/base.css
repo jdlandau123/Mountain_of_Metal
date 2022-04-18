@@ -1,0 +1,39 @@
+/* #logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+nav ul {
+    display: grid;
+    grid-template-columns: 3fr 1fr 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+
+}
+
+ul li {
+    list-style: none;
+}
+
+a.nav-item {
+    text-decoration: none;
+    font-size: 16pt;
+    color: black;
+}
+
+a:active {
+    text-decoration: none;
+    font-size: 16pt;
+    color: #D4080C;
+}
+
+a.nav-item:hover {
+    text-decoration: none;
+    font-size: 16pt;
+    color: #D4080C;
+} */
+
+nav > div > ul > li:hover > a {
+    color: #D4080C !important;
+}

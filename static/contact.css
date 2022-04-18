@@ -1,0 +1,13 @@
+h1 {
+    text-align: center;
+    font-size: 24pt;
+}
+
+p {
+    text-align: center;
+    font-size: 18pt;
+}
+
+div.form-group {
+    width: 80%;
+}

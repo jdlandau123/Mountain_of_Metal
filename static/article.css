@@ -1,0 +1,28 @@
+img.artwork {
+    display: block;
+    width: 25%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#article-title {
+    margin: 0 10% 0 10%;
+}
+
+h3 {
+    font-size: 28pt;
+}
+
+ p {
+    margin: 2% 15% 0 15%;
+    font-size: 14pt;
+}
+
+@media screen and (max-width: 600px) {
+    h3 {font-size: 24pt;}
+
+    img.artwork {
+        width: 80%;
+    }
+}
